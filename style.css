@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #51B7ED;
+        display: flex;
+        justify-content: center;
+        border-top: solid 1px #51B7ED;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 28px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+
+    h3 {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    p {
+        line-height: 1.3em;
+        color: rgb(87, 87, 87);
+    }
+
+    input[type="checkbox"] {
+        height: 1px;
+        width: 0px;
+        overflow: hidden;
+        display: hidden;
+        margin: 0;
+        display: inline-block;
+    }
+
+    input[type="radio"] {
+        height: 1px;
+        width: 0px;
+        overflow: hidden;
+        display: hidden;
+        margin: 0;
+        display: inline-block;
+    }
+
+    input[type="radio"]+label {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgb(182, 182, 182);
+        border-radius: 4px;
+    }
+
+    input[type="radio"]:checked+label {
+        box-shadow: 0 0 4px 2px rgba(0, 162, 255, 0.534);
+        border-color: #0f8dd1;
+    }
+
+    label[for="add"] {
+        background-color: black;
+        display: inline-block;
+        border-radius: 1.5em;
+        transition: all .2s ease-in-out;
+    }
+
+    label[for="add"]:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    label[for="add"] span {
+        display: block;
+        padding: 1em;
+        color: white;
+    }
+
+    .product {
+        display: flex;
+        background-color: white;
+        width: 900px;
+        height: 500px;
+        box-sizing: border-box;
+        margin-top: 150px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.603);
+        padding: 0 25px;
+        align-items: center;
+    }
+
+    .shoes img {
+        width: 500px;
+    }
+
+    .paragrafo_estilizado {
+        text-transform: uppercase;
+        color: #0f8dd1;
+        font-weight: bold;
+
+    }
+
+    .sizes {
+        padding: 0;
+        margin-left: -5px;
+        margin-bottom: 0;
+    }
+
+    .sizes li {
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    .size {
+        display: block;
+        text-align: center;
+        font-size: 1.3em;
+        margin-top: 8px;
+        color: rgb(87, 87, 87);
+    }
+
+    .button {
+        border: none;
+        color: white;
+        background-color: black;
+        padding: 1em;
+        font-size: 17px;
+        border-radius: 50px;
+    }
+
+    .shoes {
+        height: min-content;
+    }
+
+    .item {
+        position: relative;
+    }
+
+    .fav:checked+i {
+        transform: scale(1.2);
+        color: red;
+    }
+
+    .icon {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        font-size: 28px;
+        color: rgb(211, 211, 211);
+        transition: all .1s ease-in-out;
+    }
+
+    .icon:hover {
+        color: rgba(255, 0, 0, 0.555);
+        cursor: pointer;
+    }
+
+    .cart {
+        position: relative;
+    }
+
+    .check {
+        font-size: 25px;
+        position: absolute;
+        top: 15px;
+        right: 155px;
+        font-weight: bold;
+        color: green;
+    }
+
+    #add:not(:checked)~i {
+        display: none;
+        overflow: hidden;
+    }
